@@ -1,0 +1,251 @@
+/* 游戏基本样式 */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #faf8ef;
+    color: #776e65;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    font-size: 64px;
+    font-weight: bold;
+    margin: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.scores-container {
+    float: right;
+    text-align: right;
+}
+
+.score-container,
+.best-container {
+    display: inline-block;
+    background: #bbada0;
+    padding: 15px 25px;
+    border-radius: 6px;
+    color: #fff;
+    height: 60px;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.score-container .score,
+.best-container .best-score {
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 3px;
+    padding: 0 20px;
+    background: #eee4da;
+    display: inline-block;
+    min-width: 40px;
+    height: 30px;
+    line-height: 30px;
+    color: #776e65;
+}
+
+.score-header {
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 6px;
+}
+
+.above-game {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.game-intro {
+    display: inline-block;
+    margin-bottom: 0;
+}
+
+.restart-button {
+    display: inline-block;
+    background: #8f7a66;
+    border-radius: 6px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #f9f6f2;
+    height: 40px;
+    line-height: 42px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+}
+
+.game-container {
+    position: relative;
+    background: #bbada0;
+    border-radius: 6px;
+    padding: 10px;
+    display: inline-block;
+    min-height: 500px;
+}
+
+.grid-container {
+    background: rgba(238, 228, 218, 0.35);
+    border-radius: 6px;
+    position: relative;
+    padding: 10px;
+}
+
+.grid-row {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.grid-row:last-child {
+    margin-bottom: 0;
+}
+
+.grid-cell {
+    width: 106.25px;
+    height: 106.25px;
+    border-radius: 6px;
+    background: rgba(238, 228, 218, 0.35);
+    margin-right: 10px;
+}
+
+.grid-cell:last-child {
+    margin-right: 0;
+}
+
+.tile-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+.tile {
+    position: absolute;
+    width: 107px;
+    height: 107px;
+    line-height: 107px;
+    border-radius: 6px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 10;
+}
+
+.tile-2 {
+    background: #eee4da;
+    color: #776e65;
+}
+
+.tile-4 {
+    background: #ede0c8;
+    color: #776e65;
+}
+
+.tile-8 {
+    background: #f2b179;
+    color: #f9f6f2;
+}
+
+.tile-16 {
+    background: #f59563;
+    color: #f9f6f2;
+}
+
+.tile-32 {
+    background: #f67c5f;
+    color: #f9f6f2;
+}
+
+.tile-64 {
+    background: #f65e3b;
+    color: #f9f6f2;
+}
+
+.tile-128 {
+    background: #edcf72;
+    color: #f9f6f2;
+    font-size: 28px;
+}
+
+.tile-256 {
+    background: #edcc61;
+    color: #f9f6f2;
+    font-size: 28px;
+}
+
+.tile-512 {
+    background: #edc850;
+    color: #f9f6f2;
+    font-size: 28px;
+}
+
+.tile-1024 {
+    background: #edc53f;
+    color: #f9f6f2;
+    font-size: 24px;
+}
+
+.tile-2048 {
+    background: #edc22e;
+    color: #f9f6f2;
+    font-size: 24px;
+}
+
+.game-message {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(238, 228, 218, 0.73);
+    z-index: 100;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.game-message p {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 222px;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 10px;
+}
+
+.game-message .lower {
+    display: block;
+    margin-top: 59px;
+}
+
+.keep-playing-button, .retry-button {
+    display: inline-block;
+    background: #8f7a66;
+    border-radius: 6px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #f9f6f2;
+    height: 40px;
+    line-height: 42px;
+    cursor: pointer;
+    text-align: center;
+    font-weight: bold;
+    display: none;
+}
+
+.retry-button {
+    margin-left: 10px;
+}
