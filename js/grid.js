@@ -86,8 +86,13 @@ const Grid = {
   getEmptyCells,
   cloneGrid
 };
+// 挂载到全局，供其他脚本直接访问
+window.Grid = Grid;
 
 // 如果在Node环境中运行（用于测试），则导出模块
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = Grid;
 }
+
+// ESM 导出，供浏览器端使用
+// export { Grid }; // 移除 ESM 导出，避免浏览器报错
